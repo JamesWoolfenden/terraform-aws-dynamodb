@@ -1,6 +1,9 @@
 [![Slalom][logo]](https://slalom.com)
 
-# terraform-aws-dynamodb [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-dynamodb/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-dynamodb) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-dynamodb.svg)](https://github.com/JamesWoolfenden/terraform-aws-dynamodb/releases/latest)
+# terraform-aws-dynamodb
+
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-dynamodb/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-dynamodb)
+[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-dynamodb.svg)](https://github.com/JamesWoolfenden/terraform-aws-dynamodb/releases/latest)
 
 ---
 
@@ -21,18 +24,26 @@ module "dynamodb" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| common\_tags | This is to help you add tags to your cloud objects | map | n/a | yes |
-| table |  | map | n/a | yes |
+|------|-------------|------|---------|:-----:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| point\_in\_time\_recovery | n/a | `bool` | `true` | no |
+| table | n/a | `map` | n/a | yes |
+| ttl\_enabled | n/a | `bool` | `false` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| table | Required for to publish Modules |
+| dynamodb | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Help
@@ -49,7 +60,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-dyna
 
 ## Copyrights
 
-Copyright � 2019-2019 [Slalom, LLC](https://slalom.com)
+Copyright � 2019-2020 [Slalom, LLC](https://slalom.com)
 
 ## License
 

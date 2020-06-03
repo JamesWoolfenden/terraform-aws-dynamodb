@@ -1,3 +1,3 @@
 output "table" {
-  value = module.dynamodb.table
+  value = module.dynamodb.dynamodb
 }

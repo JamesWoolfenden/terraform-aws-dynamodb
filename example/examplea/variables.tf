@@ -4,13 +4,6 @@ variable "common_tags" {
 }
 
 variable "table" {
-  default = {
-    name                   = "James"
-    billing_mode           = "PAY_PER_REQUEST"
-    hash_key               = "twit"
-    range_key              = ""
-    stream_view_type       = "NEW_IMAGE"
-    stream_enabled         = true
-    server_side_encryption = false
-  }
+  description = "Describes the DynamoDB table"
+  type        = map
 }
