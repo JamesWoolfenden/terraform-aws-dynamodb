@@ -1,9 +1,14 @@
+
 [![Slalom][logo]](https://slalom.com)
 
 # terraform-aws-dynamodb
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-dynamodb/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-dynamodb)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-dynamodb.svg)](https://github.com/JamesWoolfenden/terraform-aws-dynamodb/releases/latest)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+
+A basic module to support implementations of DynamoDB.
 
 ---
 
@@ -18,7 +23,7 @@ Include this repository as a module in your existing terraform code:
 ```hcl
 module "dynamodb" {
   source            = "JamesWoolfenden/dynamodb/aws"
-  version           = "0.0.4"
+  version           = "0.1.0"
   common_tags       = var.common_tags
 }
 ```
@@ -60,7 +65,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-dyna
 
 ## Copyrights
 
-Copyright � 2019-2020 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 
 ## License
 
@@ -87,17 +92,15 @@ under the License.
 
 ### Contributors
 
-  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
+[![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
 
-  [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
-  [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-
+[jameswoolfenden_homepage]: https://github.com/jameswoolfenden
+[jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
 [logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
 [website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
 [linkedin]: https://www.linkedin.com/company/slalom-consulting/
 [twitter]: https://twitter.com/Slalom
-
 [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/JamesWoolfenden/terraform-dynamodb
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/JamesWoolfenden/terraform-dynamodb
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-dynamodb
