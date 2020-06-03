@@ -2,7 +2,7 @@ common_tags = {
 "createdby" = "Terraform" }
 
 table = {
-  name                   = "webusers"
+  name                   = "680235478471-webusers"
   billing-mode           = "PAY_PER_REQUEST"
   hash-key               = "twit"
   stream-view-type       = "NEW_IMAGE"
