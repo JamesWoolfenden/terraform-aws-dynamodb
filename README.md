@@ -8,7 +8,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
-A basic module to support implmentations of DynamoDB.
+A basic module to support implementations of DynamoDB.
 
 ---
 
@@ -23,7 +23,7 @@ Include this repository as a module in your existing terraform code:
 ```hcl
 module "dynamodb" {
   source            = "JamesWoolfenden/dynamodb/aws"
-  version           = "0.1.0"
+  version           = "0.1.2"
   common_tags       = var.common_tags
 }
 ```
