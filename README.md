@@ -26,7 +26,6 @@ module "dynamodb" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -34,23 +33,23 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name                   | Description                                        | Type   | Default | Required |
-| ---------------------- | -------------------------------------------------- | ------ | ------- | :------: |
-| common_tags            | This is to help you add tags to your cloud objects | `map`  | n/a     |   yes    |
-| point_in_time_recovery | n/a                                                | `bool` | `true`  |    no    |
-| table                  | n/a                                                | `map`  | n/a     |   yes    |
-| ttl_enabled            | n/a                                                | `bool` | `false` |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| point\_in\_time\_recovery | n/a | `bool` | `true` | no |
+| table | n/a | `map` | n/a | yes |
+| ttl\_enabled | n/a | `bool` | `false` | no |
 
 ## Outputs
 
-| Name     | Description |
-| -------- | ----------- |
-| dynamodb | n/a         |
+| Name | Description |
+|------|-------------|
+| dynamodb | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
