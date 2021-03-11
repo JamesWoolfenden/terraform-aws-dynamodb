@@ -40,13 +40,23 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_dynamodb_table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | point\_in\_time\_recovery | n/a | `bool` | `true` | no |
-| table | n/a | `map` | n/a | yes |
+| table | n/a | `map(any)` | n/a | yes |
 | ttl\_enabled | n/a | `bool` | `false` | no |
 
 ## Outputs
@@ -54,7 +64,6 @@ No requirements.
 | Name | Description |
 |------|-------------|
 | dynamodb | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Help
