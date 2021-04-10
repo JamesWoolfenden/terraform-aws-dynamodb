@@ -7,7 +7,7 @@ resource "aws_dynamodb_table" "table" {
   stream_enabled   = var.table["stream-enabled"]
 
   server_side_encryption {
-    enabled = var.table["server-side-encryption"]
+    enabled = true
   }
 
   attribute {
@@ -23,5 +23,6 @@ resource "aws_dynamodb_table" "table" {
     enabled        = var.ttl_enabled
     attribute_name = "TimeToExist"
   }
+
   tags = var.common_tags
 }

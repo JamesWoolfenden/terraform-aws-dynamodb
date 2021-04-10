@@ -38,32 +38,33 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_dynamodb_table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) |
+| Name | Type |
+|------|------|
+| [aws_dynamodb_table.table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| point\_in\_time\_recovery | n/a | `bool` | `true` | no |
-| table | n/a | `map(any)` | n/a | yes |
-| ttl\_enabled | n/a | `bool` | `false` | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_point_in_time_recovery"></a> [point\_in\_time\_recovery](#input\_point\_in\_time\_recovery) | n/a | `bool` | `true` | no |
+| <a name="input_server-side-encryption"></a> [server-side-encryption](#input\_server-side-encryption) | n/a | `bool` | `true` | no |
+| <a name="input_table"></a> [table](#input\_table) | n/a | `map(any)` | n/a | yes |
+| <a name="input_ttl_enabled"></a> [ttl\_enabled](#input\_ttl\_enabled) | n/a | `bool` | `false` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| dynamodb | n/a |
+| <a name="output_dynamodb"></a> [dynamodb](#output\_dynamodb) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Help
