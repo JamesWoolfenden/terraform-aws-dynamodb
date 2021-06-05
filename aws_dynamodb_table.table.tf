@@ -1,5 +1,6 @@
 
 resource "aws_dynamodb_table" "table" {
+  # checkov:skip=CKV2_AWS_16: ADD REASON
   name             = var.table["name"]
   billing_mode     = var.table["billing-mode"]
   hash_key         = var.table["hash-key"]
