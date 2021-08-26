@@ -8,7 +8,8 @@ resource "aws_dynamodb_table" "table" {
   stream_enabled   = var.table["stream-enabled"]
 
   server_side_encryption {
-    enabled = true
+    enabled     = true
+    kms_key_arn = var.kms_key_arn
   }
 
   attribute {

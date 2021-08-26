@@ -20,3 +20,8 @@ variable "server-side-encryption" {
   type    = bool
   default = true
 }
+
+variable "kms_key_arn" {
+  description = "The arn of a custom manage key from KMS"
+  type        = string
+}

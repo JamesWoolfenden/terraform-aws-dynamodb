@@ -55,6 +55,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The arn of a custom manage key from KMS | `string` | n/a | yes |
 | <a name="input_point_in_time_recovery"></a> [point\_in\_time\_recovery](#input\_point\_in\_time\_recovery) | n/a | `bool` | `true` | no |
 | <a name="input_server-side-encryption"></a> [server-side-encryption](#input\_server-side-encryption) | n/a | `bool` | `true` | no |
 | <a name="input_table"></a> [table](#input\_table) | n/a | `map(any)` | n/a | yes |
