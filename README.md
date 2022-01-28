@@ -30,15 +30,16 @@ module "dynamodb" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -46,26 +47,27 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
+| Name                                                                                                                   | Type     |
+| ---------------------------------------------------------------------------------------------------------------------- | -------- |
 | [aws_dynamodb_table.table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The arn of a custom manage key from KMS | `string` | n/a | yes |
-| <a name="input_point_in_time_recovery"></a> [point\_in\_time\_recovery](#input\_point\_in\_time\_recovery) | n/a | `bool` | `true` | no |
-| <a name="input_server-side-encryption"></a> [server-side-encryption](#input\_server-side-encryption) | n/a | `bool` | `true` | no |
-| <a name="input_table"></a> [table](#input\_table) | n/a | `map(any)` | n/a | yes |
-| <a name="input_ttl_enabled"></a> [ttl\_enabled](#input\_ttl\_enabled) | n/a | `bool` | `false` | no |
+| Name                                                                                                | Description                                        | Type       | Default | Required |
+| --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- | ------- | :------: |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                                  | This is to help you add tags to your cloud objects | `map(any)` | n/a     |   yes    |
+| <a name="input_kms_key_arn"></a> [kms_key_arn](#input_kms_key_arn)                                  | The arn of a custom manage key from KMS            | `string`   | n/a     |   yes    |
+| <a name="input_point_in_time_recovery"></a> [point_in_time_recovery](#input_point_in_time_recovery) | n/a                                                | `bool`     | `true`  |    no    |
+| <a name="input_server-side-encryption"></a> [server-side-encryption](#input_server-side-encryption) | n/a                                                | `bool`     | `true`  |    no    |
+| <a name="input_table"></a> [table](#input_table)                                                    | n/a                                                | `map(any)` | n/a     |   yes    |
+| <a name="input_ttl_enabled"></a> [ttl_enabled](#input_ttl_enabled)                                  | n/a                                                | `bool`     | `false` |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_dynamodb"></a> [dynamodb](#output\_dynamodb) | n/a |
+| Name                                                        | Description |
+| ----------------------------------------------------------- | ----------- |
+| <a name="output_dynamodb"></a> [dynamodb](#output_dynamodb) | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Help
@@ -82,7 +84,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-dyna
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
