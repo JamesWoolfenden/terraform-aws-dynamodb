@@ -99,7 +99,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "dynamodb:UpdateTable",
                 "dynamodb:UpdateTimeToLive"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
