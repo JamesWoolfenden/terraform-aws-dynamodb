@@ -91,13 +91,43 @@ resource "aws_iam_policy" "terraform_pike" {
                 "dynamodb:CreateTable",
                 "dynamodb:DeleteTable",
                 "dynamodb:DescribeContinuousBackups",
+                "dynamodb:DescribeKinesisStreamingDestination",
                 "dynamodb:DescribeTable",
                 "dynamodb:DescribeTimeToLive",
+                "dynamodb:DisableKinesisStreamingDestination",
+                "dynamodb:EnableKinesisStreamingDestination",
                 "dynamodb:ListTagsOfResource",
                 "dynamodb:TagResource",
                 "dynamodb:UntagResource",
+                "dynamodb:UpdateContinuousBackups",
                 "dynamodb:UpdateTable",
                 "dynamodb:UpdateTimeToLive"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "kinesis:DescribeStream",
+                "kinesis:PutRecords"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateGrant",
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:ListAliases",
+                "kms:RevokeGrant"
             ],
             "Resource": [
                 "*"
