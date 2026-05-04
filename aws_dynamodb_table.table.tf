@@ -1,4 +1,3 @@
-
 resource "aws_dynamodb_table" "table" {
   # checkov:skip=CKV2_AWS_16: ADD REASON
   name             = var.table["name"]
